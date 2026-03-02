@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,66 +7,78 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; }
+        body { font-family: 'Inter', sans-serif; background-color: #050505; }
         .mono { font-family: 'JetBrains Mono', monospace; }
     </style>
 </head>
-<body class="text-gray-300 leading-relaxed">
+<body class="text-slate-400 selection:bg-cyan-500/30">
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="text-white font-bold text-xl mono">&lt;NAME /&gt;</div>
-        <div class="space-x-8 hidden md:flex">
-            <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-            <a href="#stack" class="hover:text-cyan-400 transition">Stack</a>
-            <a href="mailto:hello@example.com" class="border border-cyan-400/50 px-4 py-1 rounded text-cyan-400 hover:bg-cyan-400/10 transition">Resume</a>
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#050505]/80 border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-white font-bold mono text-lg">&lt;DEV /&gt;</span>
+            <div class="space-x-8 text-sm font-medium">
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#stack" class="hover:text-cyan-400 transition">Stack</a>
+                <a href="mailto:your@email.com" class="text-white border border-white/10 px-4 py-2 rounded-full hover:bg-white hover:text-black transition">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <header class="max-w-4xl mx-auto mt-24 px-6 text-center md:text-left">
-        <h2 class="text-cyan-400 mono mb-4">// Hello, I'm [Your Name]</h2>
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
-            Building scalable <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">systems</span> and clean code.
+    <section class="pt-40 pb-20 px-6 max-w-5xl mx-auto">
+        <p class="text-cyan-400 mono mb-4 tracking-widest text-sm">// SOFTWARE ENGINEER</p>
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
+            I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">robust systems</span> for the modern web.
         </h1>
-        <p class="text-xl text-gray-400 mb-10 max-w-2xl">
-            Software Engineer specializing in Full-stack development. I turn complex problems into elegant, production-ready solutions.
+        <p class="text-xl max-w-2xl mb-10 leading-relaxed">
+            Specializing in full-stack architecture and cloud infrastructure. Currently focused on building high-performance APIs and intuitive user experiences.
         </p>
-        <div class="flex flex-col md:flex-row gap-4">
-            <a href="#projects" class="bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-cyan-400 transition text-center">View My Work</a>
-            <a href="#contact" class="bg-gray-800 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-700 transition text-center">Get In Touch</a>
+        <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="bg-cyan-500 text-black px-8 py-4 rounded-xl font-bold hover:bg-cyan-400 transition shadow-lg shadow-cyan-500/20">View Projects</a>
+            <a href="https://github.com" class="bg-white/5 text-white border border-white/10 px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">GitHub Profile</a>
         </div>
-    </header>
-
-    <section id="projects" class="max-w-6xl mx-auto mt-40 px-6">
-        <h3 class="text-3xl font-bold text-white mb-12 flex items-center">
-            <span class="text-cyan-400 mr-4 mono text-xl">01.</span> Selected Projects
-        </h3>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl hover:border-cyan-400/50 transition group">
-                <div class="flex justify-between items-start mb-6">
-                    <div class="text-cyan-400 text-3xl">📁</div>
-                    <div class="space-x-4 mono text-sm">
-                        <a href="#" class="hover:text-white">GitHub</a>
-                        <a href="#" class="hover:text-white">Live ↗</a>
-                    </div>
-                </div>
-                <h4 class="text-2xl font-bold text-white mb-3">Distributed Task Queue</h4>
-                <p class="text-gray-400 mb-6 text-sm">A high-performance system built in Go to handle asynchronous background jobs with Redis persistence.</p>
-                <div class="flex gap-3 text-xs mono text-cyan-400/70">
-                    <span>Go</span> <span>Redis</span> <span>Docker</span>
-                </div>
-            </div>
-            </div>
     </section>
 
-    <footer id="contact" class="py-40 text-center">
-        <h3 class="text-cyan-400 mono mb-4">What's Next?</h3>
-        <h2 class="text-5xl font-bold text-white mb-6">Get In Touch</h2>
-        <p class="max-w-md mx-auto text-gray-400 mb-10">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!
-        </p>
-        <a href="mailto:you@email.com" class="border-2 border-cyan-400 text-cyan-400 px-10 py-4 rounded-lg font-bold hover:bg-cyan-400/10 transition">
-            Say Hello
+    <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+            <span class="text-cyan-400 mono text-xl mr-4">01.</span> Selected Work
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="group bg-[#0A0A0A] border border-white/5 p-8 rounded-2xl hover:border-cyan-500/50 transition-all">
+                <div class="flex justify-between mb-6">
+                    <span class="text-3xl">🚀</span>
+                    <a href="#" class="text-cyan-400 mono text-sm hover:underline">View Source →</a>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-3">Distributed Task Engine</h3>
+                <p class="mb-6 text-sm leading-relaxed">A high-throughput worker system built with Go and Redis, capable of processing 10k+ jobs per second.</p>
+                <div class="flex gap-3 text-[10px] mono uppercase tracking-wider text-cyan-400/70">
+                    <span class="bg-cyan-500/10 px-2 py-1 rounded">Go</span>
+                    <span class="bg-cyan-500/10 px-2 py-1 rounded">Redis</span>
+                    <span class="bg-cyan-500/10 px-2 py-1 rounded">Docker</span>
+                </div>
+            </div>
+
+            <div class="group bg-[#0A0A0A] border border-white/5 p-8 rounded-2xl hover:border-blue-500/50 transition-all">
+                <div class="flex justify-between mb-6">
+                    <span class="text-3xl">☁️</span>
+                    <a href="#" class="text-blue-400 mono text-sm hover:underline">Live Demo →</a>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-3">CloudMonitor Dashboard</h3>
+                <p class="mb-6 text-sm leading-relaxed">Real-time infrastructure monitoring tool with automated alerting and interactive data visualization.</p>
+                <div class="flex gap-3 text-[10px] mono uppercase tracking-wider text-blue-400/70">
+                    <span class="bg-blue-500/10 px-2 py-1 rounded">React</span>
+                    <span class="bg-blue-500/10 px-2 py-1 rounded">AWS</span>
+                    <span class="bg-blue-500/10 px-2 py-1 rounded">Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-40 text-center border-t border-white/5">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Ready to collaborate?</h2>
+        <p class="max-w-md mx-auto mb-10">I’m currently open to new opportunities and interesting projects.</p>
+        <a href="mailto:your@email.com" class="inline-block bg-white text-black px-12 py-4 rounded-full font-black hover:scale-105 transition transform">
+            Get In Touch
         </a>
     </footer>
 
