@@ -14,68 +14,43 @@
         }
         .mono { font-family: 'JetBrains Mono', monospace; }
         h1, h2, h3 { color: #f4f4f5; letter-spacing: -0.02em; }
-        .link-hover:hover { color: #10b981; transition: 0.2s; }
     </style>
 </head>
 <body class="selection:bg-emerald-500/30">
 
-    <nav class="max-w-3xl mx-auto px-6 py-16 flex justify-between items-center">
-        <span class="mono text-xs tracking-widest uppercase text-emerald-500 font-bold">Available for Work</span>
+    <nav class="max-w-2xl mx-auto px-6 py-16 flex justify-between items-center">
+        <span class="mono text-xs tracking-widest uppercase text-emerald-500 font-bold">Status: Available</span>
         <div class="space-x-6 text-xs mono uppercase tracking-widest">
-            <a href="mailto:your@email.com" class="text-zinc-100 link-hover">Email</a>
-            <a href="https://github.com" class="text-zinc-100 link-hover">GitHub</a>
+            <a href="mailto:your@email.com" class="text-zinc-100 hover:text-emerald-400 transition">Email</a>
+            <a href="https://github.com" class="text-zinc-100 hover:text-emerald-400 transition">GitHub</a>
         </div>
     </nav>
 
-    <main class="max-w-3xl mx-auto px-6">
-        <header class="mb-32">
+    <main class="max-w-2xl mx-auto px-6">
+        <header class="mb-24">
             <h1 class="text-4xl font-bold mb-6 leading-tight">
-                Software Engineer focused on <span class="text-emerald-400">performance</span> and distributed architecture.
+                Software Engineer specialized in <span class="text-emerald-400 font-extrabold underline decoration-zinc-800 underline-offset-8">Backend Architecture</span> and High-Availability Systems.
             </h1>
-            <p class="text-lg leading-relaxed max-w-xl">
-                I build scalable backend systems and internal tools. Currently obsessed with Rust, Go, and making infrastructure invisible.
+            <p class="text-lg leading-relaxed mb-8">
+                I solve complex infrastructure problems with clean, maintainable code. Currently building tools for the modern web using a performance-first approach.
             </p>
         </header>
 
-        <section id="work" class="space-y-16 mb-40">
-            <h2 class="mono text-xs uppercase tracking-[0.2em] text-zinc-500 mb-10 border-b border-zinc-800 pb-4">Selected Projects</h2>
-
-            <div class="group">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl font-semibold group-hover:text-emerald-400 transition">Distributed Queue</h3>
-                    <span class="mono text-[10px] uppercase tracking-widest text-zinc-600">2025 — Go</span>
-                </div>
-                <p class="text-sm mb-4 leading-relaxed">
-                    A high-throughput message broker designed for low-latency job distribution across multi-region clusters.
-                </p>
-                <div class="flex gap-4 text-xs mono uppercase tracking-widest">
-                    <a href="#" class="text-zinc-100 hover:text-emerald-400 underline underline-offset-4 decoration-zinc-800">Source</a>
-                    <a href="#" class="text-zinc-100 hover:text-emerald-400 underline underline-offset-4 decoration-zinc-800">Docs</a>
-                </div>
-            </div>
-
-            <div class="group">
-                <div class="flex justify-between items-baseline mb-2">
-                    <h3 class="text-xl font-semibold group-hover:text-emerald-400 transition">Cloud Insight</h3>
-                    <span class="mono text-[10px] uppercase tracking-widest text-zinc-600">2024 — React / AWS</span>
-                </div>
-                <p class="text-sm mb-4 leading-relaxed">
-                    Real-time observability platform that visualizes AWS Lambda cold starts and cost-per-execution metrics.
-                </p>
-                <div class="flex gap-4 text-xs mono uppercase tracking-widest">
-                    <a href="#" class="text-zinc-100 hover:text-emerald-400 underline underline-offset-4 decoration-zinc-800">Live Demo</a>
-                </div>
+        <section id="stack" class="mb-32">
+            <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-6 font-bold">Technical Stack</h2>
+            <div class="flex flex-wrap gap-x-8 gap-y-4 mono text-sm text-zinc-100">
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Go</span>
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Rust</span>
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>PostgreSQL</span>
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>AWS</span>
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Docker</span>
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Redis</span>
+                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>TypeScript</span>
             </div>
         </section>
 
-        <footer class="pb-32 border-t border-zinc-900 pt-20">
-            <h2 class="text-2xl font-bold mb-4">Let's build something.</h2>
-            <p class="mb-8 text-sm">Open to freelance projects or full-time roles in engineering. No recruiters, please.</p>
-            <a href="mailto:your@email.com" class="inline-block bg-zinc-100 text-zinc-950 px-8 py-3 rounded font-bold hover:bg-emerald-400 transition">
-                Send a Message
-            </a>
-        </footer>
-    </main>
-
-</body>
-</html>
+        <footer class="pb-32 border-t border-zinc-900 pt-16">
+            <h2 class="text-2xl font-bold mb-4 text-white">Let’s talk code.</h2>
+            <p class="mb-10 text-sm max-w-sm">I am currently open to new opportunities and interesting technical challenges.</p>
+            
+            <a href="mailto:your@email.com" class="inline-flex items-
