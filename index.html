@@ -9,11 +9,13 @@
     <style>
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #000000; /* Pure black for maximum contrast */
-            color: #ffffff; /* Forced all text to white */
+            background-color: #000000; 
+            color: #ffffff; 
         }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        h1, h2, h3, p, li, span { color: #ffffff !important; } /* Overriding all grey variants */
+        /* Forces all text elements to pure white while protecting the blue highlights */
+        h1, h2, h3, p, li, span, div, nav a:not(.blue-text) { color: #ffffff !important; }
+        .blue-text { color: #60a5fa !important; }
         .grid-bg {
             background-image: radial-gradient(#1a1a1a 1px, transparent 1px);
             background-size: 40px 40px;
@@ -31,7 +33,7 @@
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                 <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            <span class="mono text-[10px] tracking-widest uppercase font-bold">Available for Hire</span>
+            <span class="mono text-[10px] tracking-widest uppercase font-bold">System Status: Active</span>
         </div>
         <div class="space-x-6 text-xs mono uppercase tracking-widest">
             <a href="mailto:tevindaney@yahoo.com" class="hover:text-blue-400 transition">Email</a>
@@ -41,10 +43,12 @@
 
     <main class="max-w-2xl mx-auto px-6">
         <header class="mb-20">
-            <h1 class="text-6xl font-bold mb-8 tracking-tighter">Tevin Daney</h1>
-            <h2 class="text-2xl font-semibold mb-6 leading-tight text-white">
-                Solving hardware puzzles and <span class="text-blue-400">scaling infrastructure</span> with precision.
+            <h1 class="text-7xl font-bold mb-4 tracking-tighter">Tevin Daney</h1>
+            
+            <h2 class="text-2xl font-semibold mb-8 leading-tight">
+                Solving hardware puzzles and <span class="blue-text">scaling infrastructure</span> with precision.
             </h2>
+            
             <p class="text-lg leading-relaxed mb-8">
                 I’m a CompTIA A+ and Network+ certified IT professional. From diagnosing failed enterprise nodes at SMS Infocomm to deploying AI-accelerated GPU clusters, I combine technical intuition with a strict adherence to process and documentation.
             </p>
@@ -52,22 +56,22 @@
 
         <section id="skills" class="mb-24 space-y-16">
             <div>
-                <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-blue-400 mb-6 font-bold">Hardware Mastery</h2>
-                <p class="mb-4 italic opacity-90">"Technical reliability starts at the component level—built for performance, maintained for uptime."</p>
-                <ul class="text-sm space-y-2 mb-4">
-                    <li>• Specialist in enterprise server repair, including motherboards, PSUs, and RAM.</li>
-                    <li>• Expert installation and validation of AI-accelerated GPUs in HPC environments.</li>
-                    <li>• Advanced hardware diagnostics, performance benchmarking, and thermal management.</li>
+                <h2 class="mono text-[10px] uppercase tracking-[0.3em] blue-text mb-6 font-bold">Hardware Mastery</h2>
+                <p class="mb-4 italic">"Technical reliability starts at the component level—built for performance, maintained for uptime."</p>
+                <ul class="text-sm space-y-3 mb-4">
+                    <li class="flex items-start"><span class="blue-text mr-2">•</span> Specialist in enterprise server repair, including motherboards, PSUs, and RAM.</li>
+                    <li class="flex items-start"><span class="blue-text mr-2">•</span> Expert installation and validation of AI-accelerated GPUs in HPC environments.</li>
+                    <li class="flex items-start"><span class="blue-text mr-2">•</span> Advanced hardware diagnostics, performance benchmarking, and thermal management.</li>
                 </ul>
             </div>
 
             <div>
-                <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-blue-400 mb-6 font-bold">Infrastructure & Networking</h2>
-                <p class="mb-4 italic opacity-90">"Building the backbone of modern operations."</p>
-                <ul class="text-sm space-y-2 mb-4">
-                    <li>• Hands-on Data Center Operations: Rack & stack, cable management, and diagnostics.</li>
-                    <li>• Skilled in TCP/IP, DNS, and DHCP troubleshooting for seamless connectivity.</li>
-                    <li>• Proficient in Windows 10/11 and Linux environments with experience in firmware and BIOS configuration.</li>
+                <h2 class="mono text-[10px] uppercase tracking-[0.3em] blue-text mb-6 font-bold">Infrastructure & Networking</h2>
+                <p class="mb-4 italic">"Building the backbone of modern operations."</p>
+                <ul class="text-sm space-y-3 mb-4">
+                    <li class="flex items-start"><span class="blue-text mr-2">•</span> Hands-on Data Center Operations: Rack & stack, cable management, and diagnostics.</li>
+                    <li class="flex items-start"><span class="blue-text mr-2">•</span> Skilled in TCP/IP, DNS, and DHCP troubleshooting for seamless connectivity.</li>
+                    <li class="flex items-start"><span class="blue-text mr-2">•</span> Proficient in Windows 10/11 and Linux environments with experience in firmware and BIOS configuration.</li>
                 </ul>
             </div>
         </section>
@@ -77,21 +81,21 @@
             <p class="text-sm mb-6 leading-relaxed">
                 I document my technical workflows, system validations, and troubleshooting procedures to ensure every deployment meets strict industry standards.
             </p>
-            <a href="https://github.com/tevybub" target="_blank" class="inline-block text-blue-400 mono text-xs uppercase tracking-widest border border-blue-500/50 px-6 py-3 rounded hover:bg-blue-500 hover:text-white transition-all">
+            <a href="https://github.com/tevybub" target="_blank" class="blue-text mono text-xs uppercase tracking-widest border border-blue-500/50 px-6 py-3 rounded hover:bg-blue-500 hover:text-white transition-all">
                 View GitHub Projects →
             </a>
         </section>
 
         <section class="mb-32">
-             <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-blue-400 mb-6 font-bold">Certifications</h2>
+             <h2 class="mono text-[10px] uppercase tracking-[0.3em] blue-text mb-6 font-bold">Certifications</h2>
              <div class="flex flex-wrap gap-4 text-xs mono">
-                <span class="border border-white/40 px-3 py-1 rounded bg-white/5">CompTIA A+</span>
-                <span class="border border-white/40 px-3 py-1 rounded bg-white/5">CompTIA Network+</span>
-                <span class="border border-white/40 px-3 py-1 rounded bg-white/5">Adjuster License</span>
+                <span class="border border-white px-3 py-1 rounded bg-white/10">CompTIA A+</span>
+                <span class="border border-white px-3 py-1 rounded bg-white/10">CompTIA Network+</span>
+                <span class="border border-white px-3 py-1 rounded bg-white/10">Adjuster License</span>
              </div>
         </section>
 
-        <footer class="pb-32 border-t border-white/10 pt-16">
+        <footer class="pb-32 border-t border-white/20 pt-16">
             <h2 class="text-2xl font-bold mb-4">Let’s get to work.</h2>
             <p class="mb-10 text-sm max-w-sm">
                 I am currently seeking opportunities in **IT Specialist** and **Helpdesk** roles where I can apply my hands-on diagnostics and troubleshooting experience.
@@ -106,29 +110,29 @@
                 </a>
             </div>
 
-            <div id="contact-info" class="p-6 bg-white/5 border border-white/10 rounded-xl mb-12">
-                <h3 class="mono text-[10px] uppercase tracking-widest text-blue-400 mb-4 font-bold">Direct Channels</h3>
-                <div class="space-y-3 text-sm">
+            <div id="contact-info" class="p-6 bg-white/5 border border-white/20 rounded-xl mb-12">
+                <h3 class="mono text-[10px] uppercase tracking-widest blue-text mb-4 font-bold">Direct Channels</h3>
+                <div class="space-y-4 text-sm">
                     <div class="flex justify-between border-b border-white/10 pb-2">
-                        <span class="opacity-60">Email</span>
+                        <span>Email</span>
                         <a href="mailto:tevindaney@yahoo.com" class="hover:text-blue-400">tevindaney@yahoo.com</a>
                     </div>
                     <div class="flex justify-between border-b border-white/10 pb-2">
-                        <span class="opacity-60">Phone</span>
+                        <span>Phone</span>
                         <span>214-425-3890</span>
                     </div>
                     <div class="flex justify-between border-b border-white/10 pb-2">
-                        <span class="opacity-60">LinkedIn</span>
+                        <span>LinkedIn</span>
                         <a href="https://www.linkedin.com/in/tevin-daney-a901981b7/" target="_blank" class="hover:text-blue-400">tevin-daney-a901981b7</a>
                     </div>
                     <div class="flex justify-between">
-                        <span class="opacity-60">Location</span>
+                        <span>Location</span>
                         <span>Aubrey, TX</span>
                     </div>
                 </div>
             </div>
             
-            <div class="mt-24 flex justify-between items-center mono text-[10px] uppercase tracking-[0.2em] opacity-40">
+            <div class="mt-24 flex justify-between items-center mono text-[10px] uppercase tracking-[0.2em] opacity-80">
                 <span>&copy; 2026 / Tevin Daney</span>
                 <span>Systems & Infrastructure</span>
             </div>
