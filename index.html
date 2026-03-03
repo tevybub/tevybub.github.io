@@ -3,54 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Software Engineer</title>
+    <title>Tevin Daney | IT & Systems Specialist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <style>
         body { 
             font-family: 'Inter', sans-serif; 
-            background-color: #09090b; /* Deep Zinc Black */
+            background-color: #09090b; 
             color: #a1a1aa; 
         }
         .mono { font-family: 'JetBrains Mono', monospace; }
         h1, h2, h3 { color: #f4f4f5; letter-spacing: -0.02em; }
+        .grid-bg {
+            background-image: radial-gradient(#18181b 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
     </style>
 </head>
-<body class="selection:bg-emerald-500/30">
+<body class="selection:bg-blue-500/30 grid-bg">
 
-    <nav class="max-w-2xl mx-auto px-6 py-16 flex justify-between items-center">
-        <span class="mono text-xs tracking-widest uppercase text-emerald-500 font-bold">Status: Available</span>
+    <nav class="max-w-2xl mx-auto px-6 py-12 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            <span class="mono text-[10px] tracking-widest uppercase text-zinc-100 font-bold">Systems Online</span>
+        </div>
         <div class="space-x-6 text-xs mono uppercase tracking-widest">
-            <a href="mailto:your@email.com" class="text-zinc-100 hover:text-emerald-400 transition">Email</a>
-            <a href="https://github.com" class="text-zinc-100 hover:text-emerald-400 transition">GitHub</a>
+            <a href="mailto:tevindaney@yahoo.com" class="text-zinc-500 hover:text-blue-400 transition">Email</a>
+            <a href="https://linkedin.com" class="text-zinc-500 hover:text-blue-400 transition">LinkedIn</a>
         </div>
     </nav>
 
     <main class="max-w-2xl mx-auto px-6">
-        <header class="mb-24">
+        <header class="mb-20">
             <h1 class="text-4xl font-bold mb-6 leading-tight">
-                Software Engineer specialized in <span class="text-emerald-400 font-extrabold underline decoration-zinc-800 underline-offset-8">Backend Architecture</span> and High-Availability Systems.
+                Solving hardware puzzles and <span class="text-blue-400">scaling infrastructure</span> with precision.
             </h1>
             <p class="text-lg leading-relaxed mb-8">
-                I solve complex infrastructure problems with clean, maintainable code. Currently building tools for the modern web using a performance-first approach.
+                I’m Tevin Daney, an IT Specialist who thrives in the high-stakes environment of data centers[cite: 4]. Whether it's diagnosing a failed enterprise node or deploying AI-accelerated GPU clusters, I combine technical intuition with a strict adherence to process and documentation[cite: 5, 25].
             </p>
         </header>
 
-        <section id="stack" class="mb-32">
-            <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-6 font-bold">Technical Stack</h2>
-            <div class="flex flex-wrap gap-x-8 gap-y-4 mono text-sm text-zinc-100">
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Go</span>
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Rust</span>
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>PostgreSQL</span>
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>AWS</span>
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Docker</span>
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>Redis</span>
-                <span class="flex items-center"><span class="text-emerald-500 mr-2">/</span>TypeScript</span>
+        <section id="skills" class="mb-32 space-y-16">
+            <div>
+                <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-blue-500 mb-6 font-bold">Hardware Mastery</h2>
+                <p class="text-zinc-300 mb-4 italic">"If it has a pulse, I can fix it—or make it faster."</p>
+                <ul class="text-sm space-y-2 mb-4">
+                    <li>• Specialist in **enterprise server repair** (motherboards, PSUs, memory, and RAID)[cite: 9, 21].</li>
+                    <li>• Expert installation and validation of **AI-accelerated GPUs** in HPC environments[cite: 11, 22].</li>
+                    <li>• Advanced hardware diagnostics, benchmarking, and thermal management[cite: 10, 11].</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-blue-500 mb-6 font-bold">Infrastructure & Networking</h2>
+                <p class="text-zinc-300 mb-4 italic">"Building the backbone of modern operations."</p>
+                <ul class="text-sm space-y-2 mb-4">
+                    <li>• Hands-on **Data Center Ops**: Rack & stack, precision cabling, and site diagnostics[cite: 10, 24].</li>
+                    <li>• Skilled in **TCP/IP, DNS, and DHCP** troubleshooting for seamless connectivity[cite: 12].</li>
+                    <li>• Proficient in Windows/Linux environments and firmware/BIOS orchestration[cite: 8, 23].</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-blue-500 mb-6 font-bold">Process & Documentation</h2>
+                <p class="text-zinc-300 mb-4 italic">"Data is only useful when it's accurate and actionable."</p>
+                <ul class="text-sm space-y-2 mb-4">
+                    <li>• Strong history of managing **SLA-driven ticketing systems** and technical reporting[cite: 14, 25].</li>
+                    <li>• Background in analyzing complex data trends to strengthen system reliability[cite: 27].</li>
+                    <li>• Currently deepening my technical foundations via a **B.S. in Computer Science**[cite: 37].</li>
+                </ul>
             </div>
         </section>
 
+        <section class="mb-32">
+             <h2 class="mono text-[10px] uppercase tracking-[0.3em] text-zinc-500 mb-6 font-bold">Professional Certifications</h2>
+             <div class="flex flex-wrap gap-4 text-xs mono">
+                <span class="border border-zinc-800 px-3 py-1 rounded text-zinc-100 bg-zinc-900/50">CompTIA A+ [cite: 16]</span>
+                <span class="border border-zinc-800 px-3 py-1 rounded text-zinc-100 bg-zinc-900/50">CompTIA Network+ [cite: 17]</span>
+                <span class="border border-zinc-800 px-3 py-1 rounded text-zinc-100 bg-zinc-900/50">Independent Adjuster License [cite: 18]</span>
+             </div>
+        </section>
+
         <footer class="pb-32 border-t border-zinc-900 pt-16">
-            <h2 class="text-2xl font-bold mb-4 text-white">Let’s talk code.</h2>
-            <p class="mb-10 text-sm max-w-sm">I am currently open to new opportunities and interesting technical challenges.</p>
+            <h2 class="text-2xl font-bold mb-4 text-white">Let’s get to work.</h2>
+            <p class="mb-10 text-sm max-w-sm">I am actively seeking roles in Server Infrastructure, Data Center Operations, or Junior Systems Engineering. If you need a meticulous, certified specialist, let's connect.</p>
             
-            <a href="mailto:your@email.com" class="inline-flex items-
+            <a href="mailto:tevindaney@yahoo.com" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded font-bold hover:bg-blue-500 transition-all hover:scale-105">
+                tevindaney@yahoo.com
+            </a>
+            
+            <div class="mt-24 flex justify-between items-center mono text-[10px] uppercase tracking-[0.2em] text-zinc-600">
+                <span>&copy; 2026 / Tevin Daney</span>
+                <div class="flex gap-4">
+                    <span>Aubrey, TX [cite: 2]</span>
+                    <a href="#" class="hover:text-blue-400 transition underline">Download CV</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
